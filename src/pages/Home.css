@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display&display=swap');
+
+body {
+  /* background-color: #21211c; */
+  background-color: white;
+}
+
+.third-back-section {
+  background-color: red;
+  
+  text-align: center;
+}
+
+.third-bk-1 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: white;
+}
+
+.third-bk-1 > div , .third-bk-2 > div{
+  text-align: center;
+  font-family: Montserrat;
+  /* border-radius: 300px; */
+  height: 300px;
+  width: 300px;
+  border-radius: 300px;
+  color: #141e55;
+  border: 10px solid #141e55;
+  margin: auto;
+  display: flex;
+}
+
+.third-bk-2 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #141e55;
+}
+
+.third-bk-2 > div {
+  color: white;
+  border: 10px solid white;
+}
+
+.third-bk-2 > div > div {
+  margin: auto;
+
+}
+
+.third-bk-1 > div:hover, .third-bk-2 > div:hover{
+  border-radius: 0px;
+  transition: 0.3s;
+}
+
+.third-bk-1 > div > i {
+  font-family: 'Playfair Display', serif;;
+}
+
+.third-bk-1 > div > div {
+  margin: auto;
+
+}
+
+
+
+.sec-abt {
+  font-family: Montserrat;
+  letter-spacing: -1px;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.first-back-section {
+  background-color: #141e55;
+}
+
+.heading-section {
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+}
+
+.heading {
+  color: white;
+  font-size: 80px;
+  margin: auto;
+  margin-top: 15%;
+  width: 350px;
+  height: 60%;
+  /* animation-name : flow-in;
+  animation-duration: 4s; */
+  font-family: 'Playfair Display', serif;
+}
+
+.fs {
+  font-family: 'Montserrat';
+  font-size: 15px;
+}
+
+.head1, .head2, .head3, .head4, .head5{
+  display: inline-block;
+  transform: scale(0);
+  animation-fill-mode: forwards; 
+}
+
+.head1 {
+  animation: flow-in 0.4s ease-out forwards;
+}
+
+.head2 {
+  animation: flow-in 0.8s ease-out forwards;
+}
+
+.head3 {
+  animation: flow-in 1.2s ease-out forwards;
+}
+
+.head4 {
+  animation: flow-in 1.6s ease-out forwards;
+}
+
+.head5 {
+  animation: flow-in 2s ease-out forwards;
+}
+first-back-section {
+  height: 1500px;
+}
+@keyframes flow-in {
+
+  0% {
+    transform: rotateX(360deg) translate(35px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX("0deg");
+    transform: rotateX(0deg) translate(0px);
+    opacity: 1;
+  }
+}
+
+.fa-arrow-circle-down, .fa-arrow-circle-up {
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+.heading-bottom {
+  font-family: 'Montserrat', sans-serif;
+}
+/* #home {
+  height: inherit;
+  width: inherit;
+} */
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+ .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    transform: scale(0.5);
+    animation: zoom-in .5s ease-out;
+    animation-fill-mode: forwards; 
+  }
+  
+@keyframes zoom-in {
+
+  0% {
+    transform: scale(.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* .flip-card:hover .flip-card-inner {
+    transform: rotateX(180deg);
+  } */
+  
+  .flip-card.hover .flip-card-inner {
+    transform: rotateX(180deg);
+  }
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    padding-top: 50px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #141e55;
+    color: white;
+    transform: rotateX(180deg);
+  } 
+
+.path {
+  /* fill: none; */
+  stroke: white;
+  stroke-width: 1px;
+  stroke-dasharray: 2,2;
+  stroke-linejoin: round;
+}
+
+footer {
+  background-color: #000000;
+}
+
+#footer {
+  background-color: #000000;
+}
+
+#footer .fab {
+  color: #777777;
+  font-size: 20px;
+}
+
+#footer > div > p {
+  color: #777777;
+}
+  @media only screen and (max-width: 768px) {
+
+    .first-back-section {
+      padding-top: 30px !important;
+    }
+    .heading {
+      font-size: 45px;
+      width: 300px;
+      margin-top: 30%;
+    }
+
+    .heading-bottom {
+      font-size: medium;
+    }
+
+    .fa-arrow-circle-down {
+      margin-top: 15%;
+    }
+  }

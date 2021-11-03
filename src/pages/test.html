@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flip-container {
+    perspective: 1000px;
+}
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+.flip-container,
+.front,
+.back {
+    width: 320px;
+    height: 480px;
+}
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.back {
+    transform: rotateY(180deg);
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="flip-container" onclick="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front">
+                1
+            </div>
+            <div class="back">
+                2
+            </div>
+        </div>
+    </div>
+    <div class="svg-icon-holder bound animated-in" data-size="" data-animation-speed="150" data-animation="true" data-animation-delay="500" data-color="extra-color-2" id="nectar-svg-animation-instance-1" style="opacity: 1;"><object type="image/svg+xml" data="https://ejosue.com/wp-content/themes/salient/css/fonts/svg/software_paintroller.svg"></object></div>
+    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" enable-background="new 0 0 64 64" viewBox="0 0 64 64" height="64px" width="64px" y="0px" x="0px" id="Layer_1" version="1.0"><metadata id="metadata17"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/></cc:Work></rdf:RDF></metadata><defs id="defs15"/><g id="g10"><polyline id="polyline2" points="29,6 46,6 63,27 32,58 1,27 18,6 32,6    32,58  " stroke-miterlimit="10" stroke-width="2" stroke="#000000" fill="none"/><polyline id="polyline4" points="32,57 18,27 24,6  " stroke-miterlimit="10" stroke-width="2" stroke="#000000" fill="none"/><polyline id="polyline6" points="32,57 46,27 40,6  " stroke-miterlimit="10" stroke-width="2" stroke="#000000" fill="none"/><line id="line8" y2="27" x2="63" y1="27" x1="1" stroke-miterlimit="10" stroke-width="2" stroke="#000000" fill="none"/></g></svg>
+</body>
+</html>

@@ -1,0 +1,16 @@
+input {
+    height: 50px;
+}
+form {
+    color: #676767;
+}
+
+.send {
+    background-color: #141e55;
+    color: white;
+    font-weight: bold;
+    font-family: "Monserrat";
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display&display=swap');
+
+
+.first-sec {
+    /* height: 700px; */
+    transform: scale(0.2);
+    animation: zoom-in .6s ease-in-out;
+    animation-fill-mode: forwards; 
+}
+
+.t-sec > div:hover {
+    background-color: #f9f9f9;
+}
+
+.t-sec > div {
+    padding: 90px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+@keyframes zoom-in {
+
+    0% {
+      transform: scale(.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+.fdi {
+    height: 700px;
+}
+.first-sec-2 {
+    background-color: #141e55;
+    color: white;
+    padding: 80px;
+}
+
+.first-sec-2 h1 {
+    font-family: "Playfair";
+    font-size: 70px;
+    color: #efeee5;
+    font-weight: 400;
+}
+
+
+.second-sec > div{
+    background-color: #f2f2f2 !important;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .first-sec-2 h1 {
+        font-size: 80px;
+    }
+
+    .fdi {
+        height: 500px;
+    }
+
+    .first-sec-2 {
+        padding: 10px;
+    }
+    
+}
+
+@media only screen and (min-width: 999px) {
+    .first-sec-2 h1 {
+        padding-top: 50px;
+        /* width: 100px; */
+        font-size: 80px;
+    }
+    
+}
+
+@media screen and (min-width: 900px) and (max-width: 1255px) {
+    .first-sec-2 h1 {
+        padding-top: 30px;
+        /* width: 100px; */
+        font-size: 70px;
+    }
+  }
